@@ -42,6 +42,44 @@ jobs:
         with:
           path: ./dist
 
+      - name: Install Site SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          name: site-key
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+          config: |
+            Host connerowen-site
+              HostName 164.92.88.111
+              User conner
+              IdentityFile ~/.ssh/site-key
+
+      - name: Delete Existing Dist
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: 164.92.88.111
+          username: conner
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /var/www/home
+            sudo rm -Rf *
+
+      - name: Copy New Dist Folder
+        run: scp -r dist/ connerowen-site:/home/conner/shotskydiver.github.io/
+
+      - name: Move Dist & NPM Install
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: 164.92.88.111
+          username: conner
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd shotskydiver.github.io
+            sudo cp -R dist/* /var/www/home
+            git fetch
+            git pull
+            sudo systemctl restart nginx
+
   deploy:
     environment:
       name: github-pages
