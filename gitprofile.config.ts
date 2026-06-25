@@ -20,17 +20,23 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['ShotSkydiver/Notebowl-Mobile', 'ShotSkydiver/Ambi-Mobile', 'ShotSkydiver/CustomCover', 'ShotSkydiver/SpotifyRedesign', 'ShotSkydiver/QSPulldownTweak', 'ShotSkydiver/CorePump-Workouts', 'ShotSkydiver/MathAlarm'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [
+          'ShotSkydiver/Notebowl-Mobile',
+          'ShotSkydiver/Ambi-Mobile',
+          'ShotSkydiver/CustomCover',
+          'ShotSkydiver/SpotifyRedesign',
+          'ShotSkydiver/QSPulldownTweak',
+          'ShotSkydiver/CorePump-Workouts',
+          'ShotSkydiver/MathAlarm',
+        ],
       },
     },
     external: {
       header: 'Client Websites',
-      // To hide the `External Projects` section, keep it empty.
       projects: [
         {
           title: 'StepBuilder',
-          description:
-            'StepBuilder site for law firm.',
+          description: 'StepBuilder site for law firm.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://stepbuilder.connerowen.me',
@@ -46,7 +52,11 @@ const CONFIG = {
       ],
     },
   },
-  seo: { title: 'Conner Owen Portfolio', description: '', imageURL: '' },
+  seo: {
+    title: 'Conner Owen • Portfolio',
+    description: 'The portfolio and projects of Conner Owen.',
+    imageURL: '',
+  },
   social: {
     linkedin: 'chdowen',
     x: '',
@@ -56,13 +66,13 @@ const CONFIG = {
     instagram: 'chd.owen',
     reddit: '',
     threads: '',
-    youtube: 'infiniteloopstudios', // example: 'pewdiepie'
+    youtube: 'infiniteloopstudios',
     udemy: '',
     dribbble: '',
     behance: '',
     medium: '',
     dev: '',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    stackoverflow: '',
     discord: '',
     telegram: '',
     website: 'https://connerowen.me',
@@ -70,8 +80,7 @@ const CONFIG = {
     email: 'chdowen@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'https://connerowen.me/Conner%20Owen%20Resume.pdf',
   },
   skills: [
     'JavaScript',
@@ -102,14 +111,16 @@ const CONFIG = {
       position: 'Full-Stack Software Engineer',
       from: 'July 2019',
       to: 'June 2021',
-      companyLink: 'https://web.archive.org/web/20211204045427/https://ambi.world/',
+      companyLink:
+        'https://web.archive.org/web/20211204045427/https://ambi.world/',
     },
     {
       company: 'Notebowl',
       position: 'Junior Software Engineer',
       from: 'September 2017',
       to: 'October 2019',
-      companyLink: 'https://web.archive.org/web/20180625064822/https://notebowl.com/',
+      companyLink:
+        'https://web.archive.org/web/20180625064822/https://notebowl.com/',
     },
   ],
   certifications: [
@@ -127,15 +138,14 @@ const CONFIG = {
       from: '2012',
       to: '2015',
     },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
+    // {
+    //   institution: 'Ironwood High School',
+    //   degree: 'Degree',
+    //   from: '2012',
+    //   to: '2014',
+    // },
   ],
-  publications: [
-  ],
+  publications: [],
   // Display articles from your medium or dev account. (Optional)
   blog: {
     // source: 'dev', // medium | dev
@@ -203,11 +213,11 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
+  footer: `Based on <a
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+    >GitProfile</a> and modified by Conner Owen`,
 
   enablePWA: true,
 };

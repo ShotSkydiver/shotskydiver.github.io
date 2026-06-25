@@ -76,6 +76,7 @@ jobs:
           script: |
             cd shotskydiver.github.io
             sudo cp -R dist/* /var/www/home
+            sudo chown -R www-data:www-data /var/www/home
             git fetch
             git pull
             sudo systemctl restart nginx
