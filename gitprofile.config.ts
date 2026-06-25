@@ -4,17 +4,12 @@ const CONFIG = {
   github: {
     username: 'ShotSkydiver', // Your GitHub org/user name. (This is the only required config)
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
   base: '/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 6, // How many projects to display.
@@ -25,52 +20,52 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        // projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['ShotSkydiver/Notebowl-Mobile', 'ShotSkydiver/Ambi-Mobile', 'ShotSkydiver/CustomCover', 'ShotSkydiver/SpotifyRedesign', 'ShotSkydiver/QSPulldownTweak', 'ShotSkydiver/CorePump-Workouts', 'ShotSkydiver/MathAlarm'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Websites Made for Clients',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'StepBuilder',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'StepBuilder site for law firm.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          link: 'https://stepbuilder.connerowen.me',
         },
         {
-          title: 'Project Name',
+          title: 'J White Designs',
           description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          link: 'https://jwhitedesigns.connerowen.me',
         },
       ],
     },
   },
   seo: { title: 'Conner Owen Portfolio', description: '', imageURL: '' },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'chdowen',
+    x: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
-    instagram: '',
+    instagram: 'chd.owen',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: 'infiniteloopstudios', // example: 'pewdiepie'
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     discord: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: 'https://connerowen.me',
     phone: '(623) 980-8340',
     email: 'chdowen@gmail.com',
   },
@@ -81,47 +76,56 @@ const CONFIG = {
   skills: [
     'JavaScript',
     'TypeScript',
-    'React.js',
+    'React/React Native',
     'Node.js',
+    'Python',
+    'Django',
     'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
+    'Swift',
+    'Java',
+    'Kotlin',
+    'Objective-C/C#',
+    'HTML/CSS',
     'PHP',
     'Laravel',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Right Angle Engineering',
+      position: 'Senior Full-Stack Software Engineer',
+      from: 'June 2021',
+      to: 'October 2025',
+      companyLink: 'https://rightangleeng.com',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
+      company: 'Ambi',
+      position: 'Full-Stack Software Engineer',
       from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      to: 'June 2021',
+      companyLink: 'https://web.archive.org/web/20211204045427/https://ambi.world/',
+    },
+    {
+      company: 'Notebowl',
+      position: 'Junior Software Engineer',
+      from: 'September 2017',
+      to: 'October 2019',
+      companyLink: 'https://web.archive.org/web/20180625064822/https://notebowl.com/',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
+      name: 'Gremlin',
+      body: 'Gremlin Chaos Engineering Certified',
+      year: 'December 2025',
       link: 'https://example.com',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Arizona State University',
+      degree: 'Bachelor (Unfinished)',
+      from: '2012',
+      to: '2015',
     },
     {
       institution: 'Institution Name',
