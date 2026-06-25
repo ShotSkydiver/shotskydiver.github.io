@@ -24,7 +24,7 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'Websites Made for Clients',
+      header: 'Client Websites',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
