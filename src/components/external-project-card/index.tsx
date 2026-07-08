@@ -92,18 +92,21 @@ const ExternalProjectCard = ({
         //   window?.open(item.link, '_blank');
         // }}
       >
-        <div className="p-8 h-full w-full">
+        <div className="p-6 h-full w-full">
           <div className="flex items-center flex-col">
             <div className="w-full">
               <div className="px-4">
                 <div className="text-center w-full">
-                  <h2 className="card-title text-lg text-center opacity-80 mb-2">
+                  <h2
+                    className="card-title text-lg text-center opacity-80 mb-4"
+                    style={{ display: 'block' }}
+                  >
                     {item.title}
                   </h2>
                   {item.imageUrl && (
                     <div className="avatar">
                       <div
-                        className="w-72 h-48"
+                        className="w-78 h-52"
                         style={{ objectFit: 'contain', aspectRatio: 'auto' }}
                       >
                         <LazyImage
@@ -118,7 +121,7 @@ const ExternalProjectCard = ({
                       </div>
                     </div>
                   )}
-                  <p className="mt-2 text-base-content text-sm">
+                  <p className="mt-4 text-base-content text-sm">
                     {item.description}
                   </p>
                 </div>
