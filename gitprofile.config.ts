@@ -36,15 +36,15 @@ const CONFIG = {
       projects: [
         {
           title: 'StepBuilder',
-          description: 'StepBuilder site for law firm.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          description:
+            'Website made for a law firm launching a new spinoff company.',
+          imageUrl: 'https://connerowen.me/stepbuilder.png',
           link: 'https://stepbuilder.connerowen.me',
         },
         {
           title: 'J White Designs',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Website made for a client with an interior decorating business.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://jwhitedesigns.connerowen.me',
