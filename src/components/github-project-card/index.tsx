@@ -76,6 +76,8 @@ const GithubProjectCard = ({
       <a
         className="card shadow-md card-sm bg-base-100 cursor-pointer"
         href={item.html_url}
+        target="_blank"
+        rel="noopener noreferrer"
         key={index}
         onClick={(e) => {
           e.preventDefault();
@@ -91,10 +93,10 @@ const GithubProjectCard = ({
           window?.open(item.html_url, '_blank');
         }}
       >
-        <div className="flex justify-between flex-col p-8 h-full w-full">
+        <div className="flex justify-between flex-col p-5 h-full w-full">
           <div>
             <div className="flex items-center truncate">
-              <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
+              <div className="card-title text-lg tracking-wide flex text-base-content opacity-80">
                 <MdInsertLink className="my-auto" />
                 <span>{item.name}</span>
               </div>

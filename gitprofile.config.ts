@@ -45,8 +45,7 @@ const CONFIG = {
           title: 'J White Designs',
           description:
             'Website made for a client with an interior decorating business.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          imageUrl: 'https://connerowen.me/jwhite.png',
           link: 'https://jwhitedesigns.connerowen.me',
         },
       ],

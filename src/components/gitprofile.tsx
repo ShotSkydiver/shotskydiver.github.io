@@ -74,7 +74,7 @@ const GitProfile = ({ config }: { config: Config }) => {
           .map((project) => `+repo:${project}`)
           .join('');
 
-        const url = `https://api.github.com/search/repositories?q=${repos}+fork:true&type=Repositories`;
+        const url = `https://api.github.com/search/repositories?q=${repos}+fork:true&sort=updated&type=Repositories`;
 
         const repoResponse = await axios.get(url, {
           headers: { 'Content-Type': 'application/vnd.github.v3+json' },
